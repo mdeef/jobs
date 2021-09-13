@@ -20,6 +20,7 @@ class job(models.Model):
     salary = models.IntegerField(default=0)
     experience = models.IntegerField(default=1)
     category = models.ForeignKey('category', on_delete=models.CASCADE)
+    Image= models.ImageField(upload_to='jobs/')
 
 
 
